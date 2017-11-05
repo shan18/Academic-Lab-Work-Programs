@@ -1,0 +1,5 @@
+2345
+Withdraw 120
+Deposit 125.2
+Read Balance
+Deposit 7005

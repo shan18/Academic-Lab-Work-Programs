@@ -1,0 +1,4 @@
+Instruction Length	OpCode
+L	2	0x1A3
+A	4	0xF54
+ST	4	0xAD3

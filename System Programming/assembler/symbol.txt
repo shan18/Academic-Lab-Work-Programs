@@ -1,0 +1,4 @@
+Symbol	Location Counter	Value
+FOUR	10	4
+FIVE	14	5
+TEMP	18	-

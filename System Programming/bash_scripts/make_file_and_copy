@@ -1,0 +1,17 @@
+#!/bin/sh
+cd ~
+mkdir A
+mkdir A/B
+cd A/B
+touch 1.txt
+echo "Hello World" > 1.txt 
+touch 2.txt
+echo "NIT Mizoram" > 2.txt
+cd ~
+mkdir C
+mkdir C/D
+cd C/D
+touch 3.txt
+cat ~/A/B/1.txt > 3.txt 
+touch 4.txt
+cat ~/A/B/2.txt > 4.txt

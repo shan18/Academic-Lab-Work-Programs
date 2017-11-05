@@ -1,0 +1,9 @@
+JOHN	START	0
+#	USING	*,15
+#	0x1A3	€=ápn
+#	0xF54	4
+#	0xAD3	-
+FOUR	DC	F'4'
+FIVE	DC	F'5'
+TEMP	DS	1F
+#	END	#
