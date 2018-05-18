@@ -1,18 +1,17 @@
 %{
-int comment=0;
+    #include<stdio.h>
+    #include<stdlib.h>
+    int a=0,b=0,d;
 %}
 %%
-[/*].*[*/] {comment++;}
-.echo ;
+"//".* {a++;}
+[/][*][^*]*[*]+([^*/][^*]*[*]+)*[/] {b++;}
+
 %%
-int yywrap()
-{
-return 1;
-}
-main(int argc,char**argv)
-{
-yyin=fopen(argv[1],"r");
-yyout=fopen(argv[2],"w");
-yylex();
-printf("no of comment lines %d\n",comment);
+void main(int argc,char *argv[]){
+    yyin=fopen(argv[1],"r");
+    yylex();
+    printf("single line %d \nmultiline %d \n",a,b);
+    d=a+b;
+    printf("total %d \n",d);
 }
