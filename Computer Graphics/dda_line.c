@@ -11,12 +11,12 @@ void dda(int x0, int y0, int x1, int y1) {
 
 	int steps = abs(dx) > abs(dy) ? abs(dx) : abs(dy);
 
-	int xi = dx / (float) steps;
-	int yi = dy / (float) steps;
+	float xi = dx / (float) steps;
+	float yi = dy / (float) steps;
 
 	float x = x0;
 	float y = y0;
-	for(int i=1; i <= steps; i++) {
+	for(int i=0; i <= steps; i++) {
 		putpixel(x, y, WHITE);
 		x += xi;
 		y += yi;
@@ -27,7 +27,7 @@ void dda(int x0, int y0, int x1, int y1) {
 int main() {
 	int gd = DETECT, gm;
 	initgraph (&gd, &gm, "");
-	dda(50, 150, 250, 250);
+	dda(2, 2, 15, 116);
 
 	delay(2000);
    	closegraph();
