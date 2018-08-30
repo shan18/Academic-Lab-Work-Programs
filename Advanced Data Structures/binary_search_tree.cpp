@@ -80,8 +80,9 @@ struct Node *delete_node(struct Node *root, int key) {
         
         struct Node *temp = min_val_node(root->right);
         root->data = temp->data;
-        return delete_node(root->right, temp->data);
+        root->right = delete_node(root->right, temp->data);
     }
+    return root;
 }
 
 int main() {
